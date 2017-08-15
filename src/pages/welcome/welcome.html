@@ -1,0 +1,43 @@
+<!-- Welcome Page Main Content Goes Here  -->
+<ion-content padding id="welcomeWrapper">
+
+	<ion-grid>
+		<ion-row text-center>
+			<ion-card class="welcomeCard">
+
+				<ion-card-header>
+					<div offset-3 col-6 offset-md-0 offset-lg-0 col-md-12 col-lg-12>
+						<img src="assets/images/hosLogo.png" alt="logo" height="105">
+					</div>
+				</ion-card-header>
+
+				<ion-list>
+					<div margin>
+						<ion-icon name="book" ios="ios-book" md="md-book"></ion-icon>
+						<h2 ion-text class="welcomePageTitle">
+							Antibiotic Policy
+							(ADULTS)
+						</h2>
+					</div>
+					<button ion-item (click)="showHome()" color="danger" block>
+						<ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
+						<span ion-text color="light">Tap to view</span>
+					</button>
+				</ion-list>
+
+			</ion-card>
+		</ion-row>
+		<ion-row>
+			<ion-footer>
+				<ion-toolbar>
+					<ion-title text-center>
+						<span class="footer">
+							&#169;&nbsp;COPYRIGHT-RASTER.IN
+						</span>
+					</ion-title>
+				</ion-toolbar>
+			</ion-footer>
+		</ion-row>
+	</ion-grid>
+
+</ion-content>

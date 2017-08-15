@@ -1,0 +1,26 @@
+page-welcome {
+    #welcomeWrapper{
+        background: slategray;
+    }
+    #welcomeWrapper .welcomeCard{
+        background: oldlace;
+        margin-top: 85px;
+    }
+    #welcomeWrapper .welcomeCard .welcomePageTitle{
+        font-weight:600;
+        font-size: 18px;
+        color:darkslateblue;
+    }
+    #welcomeWrapper .footer{
+        font-size: 14px;
+    }
+    #welcomeWrapper .title-ios > .toolbar-title{
+        overflow: visible;
+    }
+    @media screen and (min-width: 768px) {
+      ion-card img{
+        width:5.93em;
+        display: inline-block;
+      }
+    }
+}

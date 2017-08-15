@@ -1,18 +1,86 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
+    <ion-buttons end>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <div col-6 offset-md-0 offset-lg-0 col-md-12 col-lg-12>
+      <img src="assets/images/hosLogo.png" alt="logo" height="55">
+    </div>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+  <h4 ion-text color="danger" text-center>Goal</h4>
+  <hr>
+  <h4 ion-text color="primary">Mission</h4>
+  <p text-justify>
+    To provide comprehensive health care to the community by using current technologies in a cost and time effective manner through
+    the team work of dedicated and qulified health care providers in a caring environment.
   </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <hr>
+  <h4 ion-text color="primary">Vision</h4>
+  <p text-justify [ngStyle]="{'word-spacing': '-2px'}">
+	To transform ourselves into a center of excellence &nbsp; for &nbsp;
+	<span text-capitalize>
+		health care services , education and research
+	</span> in India.
+  </p>
+  <hr>
+  <ion-row>
+    <h4 ion-text color="primary"> Documentation</h4>
+    <ion-col col-12>
+		<ion-card>
+			<ion-card-header>
+				Prepared by
+			</ion-card-header>
+			<ion-card-content>
+			<ul>
+				<li>
+					<h6> Dr.J.Mehrunnissa
+						<span>
+							(Vice Chairman Infection Control)
+						</span>
+					</h6>
+				</li>
+			</ul>
+			</ion-card-content>
+      	</ion-card>
+		<ion-card>
+			<ion-card-header>
+				Issued by
+			</ion-card-header>
+			<ion-card-content>
+			<ul>
+				<li>
+					<h6>Dr.HICC
+						<span>
+							(Hospital Infection Control Committee)
+						</span>
+					</h6>
+				</li>
+			</ul>
+			</ion-card-content>
+		</ion-card>
+		<ion-card>
+			<ion-card-header>
+				Approved by
+			</ion-card-header>
+			<ion-card-content>
+			<ul>
+				<li>
+					<h6> Dr.Suresh Vishwanathan
+						<span>
+							(MD...)
+						</span>
+					</h6>
+				</li>
+			</ul>
+			</ion-card-content>
+		</ion-card>
+    </ion-col>
+  </ion-row>
+  <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
 </ion-content>
+

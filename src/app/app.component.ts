@@ -3,16 +3,20 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { WelcomePage } from '../pages/welcome/welcome';
 import { HomePage } from '../pages/home/home';
+import { OpdPolicyPage } from '../pages/opd-policy/opd-policy';
 import { ListPage } from '../pages/list/list';
 
 @Component({
   templateUrl: 'app.html'
 })
+
 export class MyApp {
+  
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = WelcomePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -22,6 +26,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
+      { title: 'OPD Antibiotic Policy',component: OpdPolicyPage},
       { title: 'List', component: ListPage }
     ];
 
@@ -41,4 +46,5 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
+
 }
