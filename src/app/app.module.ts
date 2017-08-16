@@ -11,10 +11,10 @@ import { ResInfecTablePage } from '../pages/res-infec-table/res-infec-table';
 import { SoftTissueInfectionPage } from '../pages/soft-tissue-infection/soft-tissue-infection';
 import { UrinaryTractInfectionPage } from '../pages/urinary-tract-infection/urinary-tract-infection';
 import { ListPage } from '../pages/list/list';
-
+import { SofttisueInfecTablePage } from '../pages/softtisue-infec-table/softtisue-infec-table';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+import {UrinarytractInfecTablePage} from '../pages/urinarytract-infec-table/urinarytract-infec-table';
 @NgModule({
   declarations: [
     MyApp,
@@ -25,11 +25,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ResInfecTablePage,
     SoftTissueInfectionPage,
     UrinaryTractInfectionPage,
-    ListPage
+    ListPage,
+    SofttisueInfecTablePage,
+    UrinarytractInfecTablePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp,{tabsPlacement: 'top',tabsHideOnSubPages: true}),
+    IonicModule.forRoot(MyApp,{tabsHideOnSubPages: true}),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,7 +43,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SoftTissueInfectionPage,
     UrinaryTractInfectionPage,
     HomePage,
-    ListPage
+    ListPage,
+     SofttisueInfecTablePage,
+     UrinarytractInfecTablePage
   ],
   providers: [
     StatusBar,
