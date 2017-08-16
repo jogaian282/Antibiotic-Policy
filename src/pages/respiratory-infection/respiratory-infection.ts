@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams,App } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,App,ModalController } from 'ionic-angular';
 import { ResInfecTablePage } from '../res-infec-table/res-infec-table';
 
 @IonicPage()
@@ -9,7 +9,8 @@ import { ResInfecTablePage } from '../res-infec-table/res-infec-table';
 })
 export class RespiratoryInfectionPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public app:App) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public app:App,
+  public modalCtrl:ModalController) {
   }
 
   ionViewDidLoad() {
