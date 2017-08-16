@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { IonicPage, NavController, NavParams,App } from 'ionic-angular';
+import { SofttisueInfecTablePage } from '../softtisue-infec-table/softtisue-infec-table';
 /**
  * Generated class for the SoftTissueInfectionPage page.
  *
@@ -15,11 +15,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SoftTissueInfectionPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public app:App) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SoftTissueInfectionPage');
+  }
+  softtissue()
+  {
+     const root = this.app.getRootNav();
+    root.push(SofttisueInfecTablePage);
   }
 
 }

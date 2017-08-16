@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { IonicPage, NavController, NavParams,App } from 'ionic-angular';
+import { UrinarytractInfecTablePage } from '../urinarytract-infec-table/urinarytract-infec-table';
 /**
  * Generated class for the UrinaryTractInfectionPage page.
  *
@@ -15,11 +15,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class UrinaryTractInfectionPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public app:App) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad UrinaryTractInfectionPage');
   }
-
+urinary()
+{
+  const root = this.app.getRootNav();
+    root.push(UrinarytractInfecTablePage);
+}
 }
