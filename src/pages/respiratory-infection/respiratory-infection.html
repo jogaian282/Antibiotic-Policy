@@ -1,29 +1,42 @@
-<ion-content padding>
-    <ion-grid>
-        <ion-row text-center>
-            <ion-card>
-                <ion-list>
-                    <div margin>
-                        <h2 ion-text color="primary">
+<ion-header>
+    <ion-toolbar>
+
+        <ion-buttons start>
+            <button ion-button (click)="dismiss()">
+        <span ion-text color="primary" showWhen="ios">Cancel</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+    <ion-card>
+        <ion-list no-lines>
+            <div margin>
+                        <h1 ion-text color="primary" text-center>
                             Respiratory Infection
-                        </h2>
-                        <ul text-justify>
+                        </h1><br>
+                        <ul text-justify style="list-style-type: none;">
                             <li padding-bottom>
                                 Type I - Amo xycillin / Clavulanate +/- Macrolide
                             </li>
-                            <li padding-bottom>
+                            <li text-center>(or)
+                            </li><br>
+                            <li>
                                 Oral cephalosporins (for specific limited indication)
-                            </li>
-                            <li padding-bottom>
-                                Resp.Fluroquinolones alone (Conserve for important uses)
+                            </li><br>
+                            <li text-center>(or)
+                            </li><br>
+                            <li style="margin-top: 15px;">
+                                Resp. Fluroquinolones alone (Conserve for important uses)
                             </li>
                         </ul>
                     </div>
-                </ion-list>
-                <button ion-item color="primary" block (click)="resInfecTable()">
-            Tap to view more...
-          </button>
-            </ion-card>
-        </ion-row>
-    </ion-grid>
+        </ion-list>
+        
+    </ion-card>
 </ion-content>
+

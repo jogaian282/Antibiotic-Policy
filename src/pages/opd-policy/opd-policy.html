@@ -11,10 +11,34 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<!-- <ion-content padding>
   <ion-tabs [selectedIndex]="myIndex">
-    <ion-tab [root]="tab1Root" tabTitle="Respiratory Infection"></ion-tab>
-    <ion-tab [root]="tab2Root" tabTitle="Soft Tissue Infection"></ion-tab>
-    <ion-tab [root]="tab3Root" tabTitle="Urinary Tract Infection"></ion-tab>
+    <ion-tab [root]="tab1Root" tabTitle="Respiratory"></ion-tab>
+    <ion-tab [root]="tab2Root" tabTitle="Soft Tissue"></ion-tab>
+    <ion-tab [root]="tab3Root" tabTitle="Urinary Tract"></ion-tab>
+    <ion-tab [root]="tab4Root" tabTitle="Blood Stream"></ion-tab>
   </ion-tabs>
+</ion-content> -->
+<ion-content>
+
+  <ion-list-header text-center style="color: red;">
+      OPD ANTIBIOTIC POLICY
+  </ion-list-header>
+<ion-card>
+  <ion-card-content>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+    {{ item }}
+  </button>
+  </ion-list>
+  </ion-card-content>
+</ion-card>
+<ion-card>
+  <ion-card-content>
+    <ion-card-header>
+      NOTE:
+    </ion-card-header>
+   Linezolid if MRSA is suspected METRONIDAZOLE can be added if ANAEROBIC cover of ANTIBIOTICS is not adequate
+  </ion-card-content>
+</ion-card>
 </ion-content>

@@ -4,7 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { WelcomePage } from '../pages/welcome/welcome';
-import { HomePage } from '../pages/home/home';
+//import { HomePage } from '../pages/home/home';
 import { OpdPolicyPage } from '../pages/opd-policy/opd-policy';
 import { RespiratoryInfectionPage } from '../pages/respiratory-infection/respiratory-infection';
 import { ResInfecTablePage } from '../pages/res-infec-table/res-infec-table';
@@ -15,11 +15,13 @@ import { SofttisueInfecTablePage } from '../pages/softtisue-infec-table/softtisu
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {UrinarytractInfecTablePage} from '../pages/urinarytract-infec-table/urinarytract-infec-table';
+import {BloodstreaminfectionPage} from '../pages/bloodstreaminfection/bloodstreaminfection';
+
 @NgModule({
   declarations: [
     MyApp,
     WelcomePage,
-    HomePage,
+    //HomePage,
     OpdPolicyPage,
     RespiratoryInfectionPage,
     ResInfecTablePage,
@@ -27,7 +29,8 @@ import {UrinarytractInfecTablePage} from '../pages/urinarytract-infec-table/urin
     UrinaryTractInfectionPage,
     ListPage,
     SofttisueInfecTablePage,
-    UrinarytractInfecTablePage
+    UrinarytractInfecTablePage,
+    BloodstreaminfectionPage
   ],
   imports: [
     BrowserModule,
@@ -42,10 +45,11 @@ import {UrinarytractInfecTablePage} from '../pages/urinarytract-infec-table/urin
     ResInfecTablePage,
     SoftTissueInfectionPage,
     UrinaryTractInfectionPage,
-    HomePage,
+   // HomePage,
     ListPage,
      SofttisueInfecTablePage,
-     UrinarytractInfecTablePage
+     UrinarytractInfecTablePage,
+     BloodstreaminfectionPage
   ],
   providers: [
     StatusBar,
