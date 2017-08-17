@@ -1,23 +1,106 @@
 <ion-header>
 
     <ion-navbar>
-        <ion-title>
-            Respiratory Infection
-        </ion-title>
     </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
-    <ion-list>
-        <ion-list-header>
-            Type 1
-        </ion-list-header>
-        <ion-item>Ceftriaxone +/- Macrolides (For Non ESBL)</ion-item>
-        (or)
-        <ion-item>Amoxycillin / Clavulanate +/- Macrolides</ion-item>
-    </ion-list>
-
+    <ion-row>
+        <h4 ion-text color="primary"> Respiratory Infection Policy</h4>
+        <ion-col col-12>
+            <ion-card>
+                <ion-card-header>
+                    Type I
+                </ion-card-header>
+                <ion-card-content>
+                    <ul>
+                        <li>
+                            Ceftriaxone + / - Macrolides (For Non ESBL)
+                        </li>
+                        <li text-center>
+                            (or)
+                        </li>
+                        <li>
+                            Amoxycillin / Clavulanate + / - Macrolides
+                        </li>
+                    </ul>
+                </ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-card-header>
+                    Type II
+                </ion-card-header>
+                <ion-card-content>
+                    <ul>
+                        <li>
+                            Piperacillin / Tazobactam + / - Amikacin
+                        </li>
+                        <li text-center>
+                            (or)
+                        </li>
+                        <li>
+                            Cefoperazone / Sulbactam + / - Amikacin
+                        </li>
+                    </ul>
+                </ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-card-header>
+                    Type III
+                </ion-card-header>
+                <ion-card-content>
+                    <ul>
+                        <li>
+                            Imipenem + Amikacin (or) Levofloxacin
+                        </li>
+                        <li text-center>
+                            (or)
+                        </li>
+                        <li>
+                            Meropenem + Amikacin (or) Levofloxacin
+                        </li>
+                        <li>
+                            (or) Cefepime (last resort reserve group)
+                        </li>
+                    </ul>
+                </ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-card-header>
+                    Type IV
+                </ion-card-header>
+                <ion-card-content>
+                    <ul>
+                        <li>
+                            Based on IDSA Guildelines and risk factors empirical antifungal
+                        </li>
+                        <li>
+                            Flucanazole can be added if candida infection is suspected in Febrile Neutropenic patients
+                        </li>
+                    </ul>
+                </ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-card-header>
+                    NOTE :
+                </ion-card-header>
+                <ion-card-content ion-text color="light">
+                    <p text-justify>
+                        Renal Function to be assessed if INJ.Amikacin is to be continued
+                    </p>
+                    <p text-justify>
+                        Vancomycin or Linezolid if MRSA is suspected
+                    </p>
+                    <p text-justify>
+                        Metronidazole can be added if anaerobic cover of antibiotics is not adequate
+                    </p>
+                    <p text-justify>
+                        Levofloxacin is a watch drug used only if TB is not a diagnostic consideration
+                    </p>
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+    </ion-row>
 </ion-content>
