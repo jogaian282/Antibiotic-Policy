@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomePage } from '../home/home';
-
+//import { HomePage } from '../home/home';
+import {OpdPolicyPage} from '../opd-policy/opd-policy';
 @IonicPage()
 
 @Component({
@@ -21,7 +21,8 @@ export class WelcomePage {
 
   // method to navigate to home page and setting currently as root page
   showHome(){
-    this.navCtrl.setRoot(HomePage);
+   // this.navCtrl.setRoot(HomePage);
+   this.navCtrl.setRoot(OpdPolicyPage);
   }
 
 }

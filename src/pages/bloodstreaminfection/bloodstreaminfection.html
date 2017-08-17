@@ -1,14 +1,21 @@
 <ion-header>
-
-  <ion-navbar>
-  </ion-navbar>
-
+  <ion-toolbar>
+    <ion-title>
+      Description
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="primary" showWhen="ios">Cancel</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 
 <ion-content padding>
   <ion-row>
-    <h4 ion-text color="primary"> Soft Tissue Infection</h4>
+    <h4 ion-text color="primary"> Blood Stream Infection</h4>
     <ion-col col-12>
       <ion-card>
         <ion-card-header>
@@ -17,7 +24,13 @@
         <ion-card-content>
           <ul>
             <li>
-              Ceftriaxone For (Non ESBL) Infections
+              Ceftriaxone / cefotaxime (For Non - ESBL suspect)
+            </li>
+            <li text-center>
+              or
+            </li>
+            <li>
+              ampicillin / sulbactum
             </li>
           </ul>
         </ion-card-content>
@@ -29,13 +42,13 @@
         <ion-card-content>
           <ul>
             <li>
-              Piperacillin / Tazobactam + / - (Amikacin (or) Levofloxacin) + Metronidazole
+              Piperacillin / Tazobactam +/- Amikacin
             </li>
             <li text-center>
               (or)
             </li>
             <li>
-              Cefoperazone / Sulbactam + / - (Amikacin (or) Levofloxacin) + Metronidazole
+              Cefoperazone / Sulbactam +/- Amikacin
             </li>
           </ul>
         </ion-card-content>
@@ -47,19 +60,16 @@
         <ion-card-content>
           <ul>
             <li>
-              Imipenem + Amikacin (or) Levofloxacin
+              Meropenem + Amikacin
             </li>
             <li text-center>
               (or)
             </li>
             <li>
-              Meropenem + Amikacin (or) Levofloxacin
-            </li>
-            <li text-center>
-              (or)
+              Imipenem + Amikacin
             </li>
             <li>
-              Cefepime (last resort reserve group)
+              (or) cefepime (last resort reserve group)
             </li>
           </ul>
         </ion-card-content>
@@ -92,9 +102,6 @@
           </p>
           <p text-justify>
             Metronidazole can be added if anaerobic cover of antibiotics is not adequate
-          </p>
-          <p text-justify>
-            Levofloxacin is a watch drug used only if TB is not a diagnostic consideration
           </p>
         </ion-card-content>
       </ion-card>
