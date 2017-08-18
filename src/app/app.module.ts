@@ -16,7 +16,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {UrinarytractInfecTablePage} from '../pages/urinarytract-infec-table/urinarytract-infec-table';
 import {BloodstreaminfectionPage} from '../pages/bloodstreaminfection/bloodstreaminfection';
-
+import {RiskFactorsPage} from '../pages/risk-factors/risk-factors';
+import {RiskContentPage} from '../pages/risk-content/risk-content';
+import {OpdvardPage} from '../pages/opdvard/opdvard';
 @NgModule({
   declarations: [
     MyApp,
@@ -30,7 +32,10 @@ import {BloodstreaminfectionPage} from '../pages/bloodstreaminfection/bloodstrea
     ListPage,
     SofttisueInfecTablePage,
     UrinarytractInfecTablePage,
-    BloodstreaminfectionPage
+    BloodstreaminfectionPage,
+    RiskFactorsPage,
+    RiskContentPage,
+    OpdvardPage
   ],
   imports: [
     BrowserModule,
@@ -49,7 +54,10 @@ import {BloodstreaminfectionPage} from '../pages/bloodstreaminfection/bloodstrea
     ListPage,
      SofttisueInfecTablePage,
      UrinarytractInfecTablePage,
-     BloodstreaminfectionPage
+     BloodstreaminfectionPage,
+     RiskFactorsPage,
+     RiskContentPage,
+     OpdvardPage
   ],
   providers: [
     StatusBar,

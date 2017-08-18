@@ -7,7 +7,9 @@ import { WelcomePage } from '../pages/welcome/welcome';
 import { HomePage } from '../pages/home/home';
 import { OpdPolicyPage } from '../pages/opd-policy/opd-policy';
 import { ListPage } from '../pages/list/list';
-
+import {RiskFactorsPage} from '../pages/risk-factors/risk-factors';
+import {OpdvardPage} from '../pages/opdvard/opdvard';
+//import {BloodstreaminfectionPage} from '../pages/bloodstreaminfection/bloodstreaminfection';
 @Component({
   templateUrl: 'app.html'
 })
@@ -26,8 +28,10 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       //{ title: 'Home', component: HomePage },
-      { title: 'Home',component: OpdPolicyPage},
-      { title: 'List', component: ListPage }
+      { title: 'OPD Policy',component: OpdPolicyPage},
+      { title: 'List', component: ListPage },
+      { title: 'Risk Factors', component: RiskFactorsPage },
+      { title: 'OPD Policy Ward', component: OpdvardPage }
     ];
 
   }

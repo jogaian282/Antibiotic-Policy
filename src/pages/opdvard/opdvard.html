@@ -15,16 +15,19 @@
 <ion-content>
   <ion-list>
     <ion-list-header text-center style="color: red;">
-      OPD ANTIBIOTIC POLICY
+      OPD WARD
     </ion-list-header>
-    <a ion-item (click)="openModal({charNum: 0})" class="listclass">
+    <a ion-item (click)="resp1()">
       RESPIRATORY INFECTION
     </a>
-    <a ion-item (click)="openModal({charNum: 1})" class="listclass">
+    <a ion-item (click)="resp2()">
       SOFT TISSUE INFECTION
     </a>
-    <a ion-item (click)="openModal({charNum: 2})" class="listclass">
+    <a ion-item (click)="resp3()">
       URINARY TRACT INFECTION
+    </a>
+    <a ion-item (click)="resp4()">
+      BLOOD STREAM INFECTION
     </a>
   </ion-list>
   <ion-card>
