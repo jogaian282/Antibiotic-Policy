@@ -16,27 +16,26 @@
     <ion-card>
         <ion-list no-lines>
             <div margin>
-                        <h1 ion-text color="primary" text-center>
-                            Respiratory Infection
+                        <h1 ion-text color="primary" text-center >
+                            {{character.title}}
                         </h1><br>
-                        <ul text-justify style="list-style-type: none;">
-                            <li padding-bottom>
-                                Type I - Amo xycillin / Clavulanate +/- Macrolide
+                        <ul text-justify style="list-style-type: none;padding-left: 0px;">
+                            <li padding-bottom >
+                                {{character.res1}}
                             </li>
-                            <li text-center>(or)
+                            <li text-center >{{character.res2}}
                             </li><br>
-                            <li>
-                                Oral cephalosporins (for specific limited indication)
+                            <li tappable>
+                                {{character.res3}}
                             </li><br>
-                            <li text-center>(or)
+                            <li text-center>{{character.res4}}
                             </li><br>
                             <li style="margin-top: 15px;">
-                                Resp. Fluroquinolones alone (Conserve for important uses)
+                                {{character.res5}}
                             </li>
                         </ul>
                     </div>
         </ion-list>
-        
     </ion-card>
 </ion-content>
 

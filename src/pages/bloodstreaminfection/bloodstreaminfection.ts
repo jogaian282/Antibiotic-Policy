@@ -14,15 +14,12 @@ import { IonicPage, NavController, NavParams,ViewController } from 'ionic-angula
   templateUrl: 'bloodstreaminfection.html',
 })
 export class BloodstreaminfectionPage {
-
   constructor(public navCtrl: NavController, public navParams: NavParams,public viewCtrl: ViewController) {
   }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad BloodstreaminfectionPage');
   }
-  dismiss() {
+dismiss() {
     this.viewCtrl.dismiss();
-  }
-
+  } 
 }

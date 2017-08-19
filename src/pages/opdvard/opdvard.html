@@ -15,23 +15,26 @@
 <ion-content>
   <ion-list>
     <ion-list-header text-center color="primary">
-      OPD ANTIBIOTIC POLICY
+      OPD WARD
     </ion-list-header>
-    <ion-item (click)="openModal({charNum: 0})" class="listclass" tappable>
+    <ion-item (click)="resp1()" tappable class="vard" tappable> 
       RESPIRATORY INFECTION
-    <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
+<ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
     </ion-item>
-    
-    <ion-item (click)="openModal({charNum: 1})" class="listclass" tappable>
+    <ion-item (click)="resp2()" tappable class="vard" tappable>
       SOFT TISSUE INFECTION
       <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
     </ion-item>
-    <ion-item (click)="openModal({charNum: 2})" class="listclass" tappable>
+    <ion-item (click)="resp3()" tappable class="vard" tappable>
       URINARY TRACT INFECTION
       <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
     </ion-item>
+    <ion-item (click)="resp4()" tappable class="vard" tappable>
+      BLOOD STREAM INFECTION
+      <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
+    </ion-item>
   </ion-list>
-  <ion-card style="margin-top:100px;">
+  <ion-card>
     <ion-card-content>
       <ion-card-header>
         NOTE:
