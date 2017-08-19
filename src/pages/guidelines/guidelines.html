@@ -13,30 +13,43 @@
 
 
 <ion-content>
+
+  
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+
+
+
+
   <ion-list>
     <ion-list-header text-center color="primary">
-      OPD ANTIBIOTIC POLICY
+      GUIDELINES FOR OPTIMIZING USE OF KEY<br> ANTIMICROBIALS
     </ion-list-header>
     <ion-item (click)="openModal({charNum: 0})" class="listclass" tappable>
-      RESPIRATORY INFECTION
+     The following criteria has been proposed <br> for initiating Colistin
     <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
     </ion-item>
-    
     <ion-item (click)="openModal({charNum: 1})" class="listclass" tappable>
-      SOFT TISSUE INFECTION
+      The following criteria has been proposed <br> to protect the Carbapenems and Linezolid <br>from overuse
       <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
     </ion-item>
     <ion-item (click)="openModal({charNum: 2})" class="listclass" tappable>
-      URINARY TRACT INFECTION
+      Some guiding principles for <br>de-escalation/Escalation:
+      <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
+    </ion-item>
+    <ion-item (click)="openModal({charNum: 3})" class="listclass" tappable>
+      Indications for Carbapenem use:
+      <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
+    </ion-item>
+    <ion-item (click)="openModal({charNum: 4})" class="listclass" tappable>
+      Reference:
       <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
     </ion-item>
   </ion-list>
-  <ion-card style="margin-top:100px;">
-    <ion-card-content>
-      <ion-card-header>
-        NOTE:
-      </ion-card-header>
-      Linezolid if MRSA is suspected METRONIDAZOLE can be added if ANAEROBIC cover of ANTIBIOTICS is not adequate
-    </ion-card-content>
-  </ion-card>
 </ion-content>

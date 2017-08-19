@@ -19,6 +19,8 @@ import {BloodstreaminfectionPage} from '../pages/bloodstreaminfection/bloodstrea
 import {RiskFactorsPage} from '../pages/risk-factors/risk-factors';
 import {RiskContentPage} from '../pages/risk-content/risk-content';
 import {OpdvardPage} from '../pages/opdvard/opdvard';
+import {GuidelinesPage} from '../pages/guidelines/guidelines';
+import {GuidecontentPage} from '../pages/guidecontent/guidecontent';
 @NgModule({
   declarations: [
     MyApp,
@@ -35,7 +37,9 @@ import {OpdvardPage} from '../pages/opdvard/opdvard';
     BloodstreaminfectionPage,
     RiskFactorsPage,
     RiskContentPage,
-    OpdvardPage
+    OpdvardPage,
+    GuidelinesPage,
+    GuidecontentPage
   ],
   imports: [
     BrowserModule,
@@ -57,7 +61,8 @@ import {OpdvardPage} from '../pages/opdvard/opdvard';
      BloodstreaminfectionPage,
      RiskFactorsPage,
      RiskContentPage,
-     OpdvardPage
+     OpdvardPage,
+     GuidelinesPage,GuidecontentPage
   ],
   providers: [
     StatusBar,

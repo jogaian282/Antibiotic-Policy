@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { OpdPolicyPage } from '../pages/opd-policy/opd-policy';
 import { ListPage } from '../pages/list/list';
 import {RiskFactorsPage} from '../pages/risk-factors/risk-factors';
+import {GuidelinesPage} from '../pages/guidelines/guidelines';
 import {OpdvardPage} from '../pages/opdvard/opdvard';
 //import {BloodstreaminfectionPage} from '../pages/bloodstreaminfection/bloodstreaminfection';
 @Component({
@@ -31,7 +32,8 @@ export class MyApp {
       { title: 'OPD Policy',component: OpdPolicyPage},
       { title: 'List', component: ListPage },
       { title: 'Risk Factors', component: RiskFactorsPage },
-      { title: 'OPD Policy Ward', component: OpdvardPage }
+      { title: 'OPD Policy Ward', component: OpdvardPage },
+      { title: 'GuideLines', component: GuidelinesPage }
     ];
 
   }

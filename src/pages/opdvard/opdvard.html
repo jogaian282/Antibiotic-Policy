@@ -14,21 +14,25 @@
 
 <ion-content>
   <ion-list>
-    <ion-list-header text-center style="color: red;">
+    <ion-list-header text-center color="primary">
       OPD WARD
     </ion-list-header>
-    <a ion-item (click)="resp1()">
+    <ion-item (click)="resp1()" tappable class="vard" tappable> 
       RESPIRATORY INFECTION
-    </a>
-    <a ion-item (click)="resp2()">
+<ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
+    </ion-item>
+    <ion-item (click)="resp2()" tappable class="vard" tappable>
       SOFT TISSUE INFECTION
-    </a>
-    <a ion-item (click)="resp3()">
+      <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
+    </ion-item>
+    <ion-item (click)="resp3()" tappable class="vard" tappable>
       URINARY TRACT INFECTION
-    </a>
-    <a ion-item (click)="resp4()">
+      <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
+    </ion-item>
+    <ion-item (click)="resp4()" tappable class="vard" tappable>
       BLOOD STREAM INFECTION
-    </a>
+      <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
+    </ion-item>
   </ion-list>
   <ion-card>
     <ion-card-content>
