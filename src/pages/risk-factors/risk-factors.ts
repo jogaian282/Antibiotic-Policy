@@ -14,7 +14,7 @@ import {RiskContentPage} from '../risk-content/risk-content';
   templateUrl: 'risk-factors.html',
 })
 export class RiskFactorsPage {
-
+pet: string = "puppies";
   constructor(public navCtrl: NavController, public navParams: NavParams, public app:App,public modalCtrl: ModalController) {
   }
 openModal(characterNum) {

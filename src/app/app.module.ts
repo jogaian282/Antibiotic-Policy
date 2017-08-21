@@ -10,7 +10,6 @@ import { RespiratoryInfectionPage } from '../pages/respiratory-infection/respira
 import { ResInfecTablePage } from '../pages/res-infec-table/res-infec-table';
 import { SoftTissueInfectionPage } from '../pages/soft-tissue-infection/soft-tissue-infection';
 import { UrinaryTractInfectionPage } from '../pages/urinary-tract-infection/urinary-tract-infection';
-import { ListPage } from '../pages/list/list';
 import { SofttisueInfecTablePage } from '../pages/softtisue-infec-table/softtisue-infec-table';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -31,7 +30,6 @@ import {GuidecontentPage} from '../pages/guidecontent/guidecontent';
     ResInfecTablePage,
     SoftTissueInfectionPage,
     UrinaryTractInfectionPage,
-    ListPage,
     SofttisueInfecTablePage,
     UrinarytractInfecTablePage,
     BloodstreaminfectionPage,
@@ -55,7 +53,7 @@ import {GuidecontentPage} from '../pages/guidecontent/guidecontent';
     SoftTissueInfectionPage,
     UrinaryTractInfectionPage,
    // HomePage,
-    ListPage,
+   
      SofttisueInfecTablePage,
      UrinarytractInfecTablePage,
      BloodstreaminfectionPage,

@@ -5,11 +5,12 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
+  <ion-content class="custom">
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-          {{p.title}}
-      </button>
+      <ion-item menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+       <img src="{{p.imgdisplay}}" width="20"/> 
+    <span style="margin-left: 10px;">{{p.title}}</span>
+      </ion-item>
     </ion-list>
   </ion-content>
 

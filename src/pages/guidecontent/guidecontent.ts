@@ -41,7 +41,7 @@ elevated Procalcitonin (PCT) or culture from a sterile site
 serum lactate
         `,
         res2: `2.Clinical failure of other classes of antibiotics over 48 hours in terms of
-worsening inflammatory markers,unresolving fever and new / worsening hemodynamic instability          
+worsening inflammatory markers, unresolving fever and new / worsening hemodynamic instability          
         `,
         res3:`3.Underlying severe immuno - supperssion - Neutropenea, immuno-suppressive therapy,Diabetic ketoacidosis (DKA)
         etc
@@ -55,8 +55,8 @@ worsening inflammatory markers,unresolving fever and new / worsening hemodynamic
       {
         title: 'Some guiding principles for de-escalation/Escalation:',
         res1: `
-        1.If ESBL +ve:drug choice is monotheraphy with carbepenems.Preferably choose
-        group I carbepenem.Piperacillin-Tazobactum and Cefoperazone-Sulbactum can
+        1.If ESBL +ve:drug choice is monotheraphy with carbepenems. Preferably choose
+        group I carbepenem. Piperacillin-Tazobactum and Cefoperazone-Sulbactum can
         be used if in-vitro sensitive and for mild infections
         `,
         res2: `2.Vancomycin should be used only for confirmed MRSA infections and not in MSSA 
@@ -73,22 +73,22 @@ worsening inflammatory markers,unresolving fever and new / worsening hemodynamic
       },
       {
         title: 'Indications for Carbapenem use:',
-        res1: `1.Infections (e.g., bacteremia,pyelonephritis,intra-abdominal infections 
-        ,peritonitis,cholangitis,abscesses),nosocomia Pnneumonia etc.)confirmed (by appropriate
-        culture and susceptibility studies)to be caused by Gram-negative bacteria (E coli,
-        Klebsiella spp., Enterobacter spp., Pseudomonas aeruginosa, other non-fermenting Gram-negative bacilli)
+        res1: `1.Infections (e.g., bacteremia, pyelonephritis, intra-abdominal infections 
+        , peritonitis, cholangitis, abscesses), nosocomia Pnneumonia etc.) confirmed (by appropriate
+        culture and susceptibility studies) to be caused by Gram-negative bacteria (E coli,
+        Klebsiella spp., Enterobacter spp.,Pseudomonas aeruginosa, other non-fermenting Gram-negative bacilli)
         resistant to other classes of antimicrobials and susceptible only to carbapenems in-vitro        
         `,
-        res2: `2.Initial empiric treatment for severe,life-threatening infections 
-        (associated with multi-organ dysfunction,septic shock) caused by Gram-negative bacteria.
+        res2: `2.Initial empiric treatment for severe, life-threatening infections 
+        (associated with multi-organ dysfunction, septic shock) caused by Gram-negative bacteria.
         `,
-        res3:`  * Febrile neutropenia`
+        res3:`* Febrile neutropenia`
         ,
-        res4:`* ventilator associated / nosocomial pneumonia`,
-        res5:`* Pyelonephritis/complicated urinary tract infections`,
-        res6:`* Complicated intra - abdominal infections`,
+        res4:`*ventilator associated / nosocomial pneumonia`,
+        res5:`*Pyelonephritis / complicated urinary tract infections`,
+        res6:`*Complicated intra - abdominal infections`,
         res7:`Once the culture and susceptibility reports are available,choose the most appropriate
-        antibiotic based on spectrum of activity,toxicity and cost (de-escalation)
+        antibiotic based on spectrum of activity, toxicity and cost (de-escalation)
         `
       },
       {

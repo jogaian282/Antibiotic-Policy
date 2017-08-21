@@ -25,3 +25,13 @@
 .scroll-content{
     overflow-y: auto !important;
 }
+.custom
+{
+    background-color: sandybrown;
+}
+.custom .item{
+    background-color: sandybrown;
+    font-weight: 700px;
+    color: white;
+    cursor: pointer;
+}

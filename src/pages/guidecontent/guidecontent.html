@@ -12,14 +12,14 @@
 
 
 <ion-content>
-  <ion-card>
+  <ion-card text-justify style="line-height: 25px;">
     <ion-list no-lines>
       <div margin>
         <h1 ion-text color="primary" text-center>
           {{character.title}}
         </h1><br>
         <ul [ngStyle]="{'list-style-type': 'none', 'padding-left': '0px'}">
-          <li padding-bottom>
+          <li padding-bottom text-justify>
             {{character.res1}}
           </li>
           <li>{{character.res2}}
