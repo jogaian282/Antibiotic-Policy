@@ -8,8 +8,9 @@
   <ion-content class="custom">
     <ion-list>
       <ion-item menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-       <img src="{{p.imgdisplay}}" width="20"/> 
-    <span style="margin-left: 10px;">{{p.title}}</span>
+       <!-- <img src="{{p.imgdisplay}}" width="20"/>  -->
+       <ion-icon name="{{p.imgdisplay}}"></ion-icon>
+        <span style="padding-left: 10px;">{{p.title}}</span>
       </ion-item>
     </ion-list>
   </ion-content>
