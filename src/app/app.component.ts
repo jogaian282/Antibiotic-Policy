@@ -26,10 +26,10 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       //{ title: 'Home', component: HomePage },
-      {imgdisplay:'assets/images/hosLogo.png',title: '  OPD Policy',component: OpdPolicyPage},
-      {imgdisplay:'assets/images/one.png', title: '  Risk Factors', component: RiskFactorsPage },
-      {imgdisplay:'assets/images/sks-hospital.png', title: '  OPD Policy Ward', component: OpdvardPage },
-      {imgdisplay:'assets/images/two.png', title: '  GuideLines', component: GuidelinesPage }
+      {imgdisplay:'clipboard',title: '  OPD Policy',component: OpdPolicyPage},
+      {imgdisplay:'construct', title: '  Risk Factors', component: RiskFactorsPage },
+      {imgdisplay:'contacts', title: '  OPD Policy Ward', component: OpdvardPage },
+      {imgdisplay:'bookmarks', title: '  GuideLines', component: GuidelinesPage }
     ];
 
   }
