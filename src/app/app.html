@@ -1,15 +1,15 @@
 <ion-menu [content]="content">
   <ion-header>
-    <ion-toolbar>
-      <ion-title>Antibiotic Policy</ion-title>
-    </ion-toolbar>
+    <img src="assets/images/hosLogo.png" width="40" height="50">
+    <h5 style="margin-top: 0.6rem;
+    margin-bottom: 0rem;">Antibiotic Policy</h5>
   </ion-header>
 
   <ion-content class="custom">
     <ion-list>
       <ion-item menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-       <!-- <img src="{{p.imgdisplay}}" width="20"/>  -->
-       <ion-icon name="{{p.imgdisplay}}"></ion-icon>
+        <!-- <img src="{{p.imgdisplay}}" width="20"/>  -->
+        <ion-icon name="{{p.imgdisplay}}"></ion-icon>
         <span style="padding-left: 10px;">{{p.title}}</span>
       </ion-item>
     </ion-list>
