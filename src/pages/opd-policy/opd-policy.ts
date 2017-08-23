@@ -10,9 +10,36 @@ import { RespiratoryInfectionPage } from '../respiratory-infection/respiratory-i
 })
 
 export class OpdPolicyPage {
-
+shownGroup = null;
   myIndex: number = 0;
+diseases=[
+{title: 'Respiratory Infection',
+        res1: 'Type I - Amo xycillin / Clavulanate +/- Macrolide',
+        res2: '(or)',
+        res3:'Oral cephalosporins (for specific limited indication)',
+        res4:'(or)',
+        res5:'Resp. Fluroquinolones alone (Conserve for important uses)'
+},
+      {
+        title: 'Soft Tissue Infection',
+        res1: 'Type I - Amoxycillin / Clavulanate (or) Linezolid (if MRSA suspected)',
+        res2: 'or',
+        res3:'Clindamycin + / - Fluroquinolones',
+        res4:'',
+        res5:''
+      },
+      {
+        title: 'Urinary Tract Infection',
+        res1: 'Type I -Nitrofurantoin or Co-trimoxazole',
+        res2: '(or)',
+        res3:'Fluroquinolones (Conserve for important uses other than acute cystitis)',
+        res4:'',
+        res5:''
+      } 
 
+
+
+];
   // tab1Root = RespiratoryInfectionPage;
   // tab2Root = SoftTissueInfectionPage;
   // tab3Root = UrinaryTractInfectionPage;
@@ -25,25 +52,15 @@ export class OpdPolicyPage {
     console.log('ionViewDidLoad OpdPolicyPage');
   }
 
-  openModal(characterNum) {
-    let modal = this.modalCtrl.create(RespiratoryInfectionPage, characterNum);
-    modal.present();
-  }
-exit(){
-      let alert = this.alert.create({
-        title: 'Confirm',
-        message: 'Do you want to exit?',
-        buttons: [{
-          text: "exit?",
-          handler: () => { this.exitApp() }
-        }, {
-          text: "Cancel",
-          role: 'cancel'
-        }]
-      })
-      alert.present();
-  }
-  exitApp(){
-    this.platform.exitApp();
-  }
+ toggleGroup(group) {
+    if (this.isGroupShown(group)) {
+        this.shownGroup = null;
+    } else {
+        this.shownGroup = group;
+    }
+};
+isGroupShown(group) {
+    return this.shownGroup === group;
+};
+
 }

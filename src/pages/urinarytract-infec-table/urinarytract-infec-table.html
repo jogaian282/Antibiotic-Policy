@@ -1,15 +1,14 @@
+
 <ion-header>
-    <ion-toolbar>
-
-        <ion-buttons start>
-            <button ion-button (click)="dismiss()">
-        <span ion-text color="primary" showWhen="ios">Cancel</span>
-        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
       </button>
-        </ion-buttons>
-    </ion-toolbar>
+    </ion-buttons>
+  <ion-title class="tit">Antibiotic Policy</ion-title>
+  </ion-navbar>
 </ion-header>
-
 
 <ion-content padding>
   <ion-row>
@@ -34,13 +33,13 @@
         <ion-card-content>
           <ul>
             <li>
-                Cefoperazone / Sulbactam
+              Cefoperazone / Sulbactam
             </li>
             <li text-center>
               (or)
             </li>
             <li>
-               Piperacillin / Tazobactam
+              Piperacillin / Tazobactam
             </li>
           </ul>
         </ion-card-content>
@@ -58,7 +57,7 @@
               (or)
             </li>
             <li>
-               Imipenem + / - Amikacin
+              Imipenem + / - Amikacin
             </li>
           </ul>
         </ion-card-content>

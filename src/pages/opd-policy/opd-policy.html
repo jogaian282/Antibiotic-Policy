@@ -5,34 +5,25 @@
         <ion-icon name="menu"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-buttons end> 
-      <div col-12 offset-md-0 offset-lg-0 col-md-12 col-lg-12>
-        <img src="assets/images/hosLogo.png" alt="logo" width="45">
-      </div>
-    </ion-buttons>
+  <ion-title>Antibiotic Policy</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content>
   <ion-list>
-    <ion-list-header text-center color="primary">
-      OPD ANTIBIOTIC POLICY
-    </ion-list-header>
-    <ion-item (click)="openModal({charNum: 0})" class="listclass" tappable>
-      RESPIRATORY INFECTION
-    <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
-    </ion-item>
-    
-    <ion-item (click)="openModal({charNum: 1})" class="listclass" tappable>
-      SOFT TISSUE INFECTION
-      <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
-    </ion-item>
-    <ion-item (click)="openModal({charNum: 2})" class="listclass" tappable>
-      URINARY TRACT INFECTION
-      <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward" name="arrow-round-forward" item-end></ion-icon>
-    </ion-item>
-  </ion-list>
+  <ion-item *ngFor="let d of diseases; let i=index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
+    <h3 style="cursor: pointer;">
+      {{d.title}}
+      <ion-icon color="success" item-right [name]="isGroupShown(i) ? 'arrow-dropdown' : 'arrow-dropright'" item-end></ion-icon>
+    </h3>
+    <div *ngIf="isGroupShown(i)">{{d.res1}}</div>
+    <div *ngIf="isGroupShown(i)">{{d.res2}}</div>
+    <div *ngIf="isGroupShown(i)">{{d.res3}}</div>
+    <div *ngIf="isGroupShown(i)">{{d.res4}}</div>
+    <div *ngIf="isGroupShown(i)">{{d.res5}}</div>
+  </ion-item>
+</ion-list>
   <ion-card style="margin-top:100px;" text-justify>
     <ion-card-content>
       <ion-card-header>

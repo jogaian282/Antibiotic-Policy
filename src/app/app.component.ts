@@ -1,36 +1,75 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform, ModalController, App } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { WelcomePage } from '../pages/welcome/welcome';
 //import { HomePage } from '../pages/home/home';
 import { OpdPolicyPage } from '../pages/opd-policy/opd-policy';
-import {RiskFactorsPage} from '../pages/risk-factors/risk-factors';
-import {GuidelinesPage} from '../pages/guidelines/guidelines';
-import {OpdvardPage} from '../pages/opdvard/opdvard';
+import { RiskFactorsPage } from '../pages/risk-factors/risk-factors';
+import { RiskContentPage } from '../pages/risk-content/risk-content';
+import { GuidecontentPage } from '../pages/guidecontent/guidecontent';
+// import { GuidelinesPage } from '../pages/guidelines/guidelines';
+import { OpdvardPage } from '../pages/opdvard/opdvard';
+import { ResInfecTablePage } from '../pages/res-infec-table/res-infec-table';
+import { SofttisueInfecTablePage } from '../pages/softtisue-infec-table/softtisue-infec-table';
+import { UrinarytractInfecTablePage } from '../pages/urinarytract-infec-table/urinarytract-infec-table';
+import { BloodstreaminfectionPage } from '../pages/bloodstreaminfection/bloodstreaminfection';
+
 //import {BloodstreaminfectionPage} from '../pages/bloodstreaminfection/bloodstreaminfection';
 @Component({
   templateUrl: 'app.html'
 })
 
 export class MyApp {
-  
+
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = WelcomePage;
-  pages: Array<{imgdisplay:string,title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  pages: Array<{ title: string, iconName: string, pageName: any, contentPage: any }> = [];
+  // pages: Array<{ title: string, component: any }>;
+  // p1: Array<{ title: string, component: any }>;
+  // p11: Array<{ title: string, component: any }>;
+  // p2: Array<{ title: string, component: any }>;
+  // p12: Array<{ title: string, component: any }>;
+  // p13: Array<{ title: string, component: any }>;
+  // p14: Array<{ title: string, component: any }>;
+
+
+  constructor(public platform: Platform,
+    public statusBar: StatusBar,
+    public splashScreen: SplashScreen,
+    public modalCtrl: ModalController, public appCtrl: App) {
+
+
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      //{ title: 'Home', component: HomePage },
-      {imgdisplay:'clipboard',title: '  OPD Policy',component: OpdPolicyPage},
-      {imgdisplay:'construct', title: '  Risk Factors', component: RiskFactorsPage },
-      {imgdisplay:'contacts', title: '  OPD Policy Ward', component: OpdvardPage },
-      {imgdisplay:'bookmarks', title: '  GuideLines', component: GuidelinesPage }
-    ];
+      {
+        title: "OPD Policy",
+        iconName: "clipboard",
+        pageName: [{
+          name:"Opd Policy",
+          id:0
+        }],
+        contentPage: OpdPolicyPage
+      },
+      {
+        title: "Risk Factors",
+        iconName: "construct",
+        pageName: [
+          {
+            name: "MDR/Health",
+            id:0
+          },
+          { name: "Fungemia",
+        id:1
+        }
+        ],
+        contentPage: RiskFactorsPage
+      }
+    ]
 
   }
 
@@ -43,10 +82,21 @@ export class MyApp {
     });
   }
 
+
+
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    console.log(page);
+    this.nav.setRoot(page.contentPage);
+    // this.appCtrl.getRootNav().setRoot(page.contentPage);
   }
+
+  // openModal(characterNum) {
+  //   console.log(characterNum);
+
+  //   let modal = this.modalCtrl.create(GuidecontentPage, characterNum);
+  //   modal.present();
+  // }
 
 }
