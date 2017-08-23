@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams,App,ModalController,ViewController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,App,ModalController } from 'ionic-angular';
 
 /**
  * Generated class for the GuidecontentPage page.
@@ -15,7 +15,7 @@ import { IonicPage, NavController, NavParams,App,ModalController,ViewController 
 })
 export class GuidecontentPage {
 character;
-  constructor(public navCtrl: NavController, public navParams: NavParams,public app:App,public viewCtrl: ViewController,
+  constructor(public navCtrl: NavController, public navParams: NavParams,public app:App,
   public modalCtrl:ModalController) {
 
 var characters = [
@@ -30,10 +30,10 @@ elevated Procalcitonin (PCT) or culture from a sterile site
         res3:`3.Colistin to be given with loading does in combination with 
         beta lactum class of antibiotics
         `,
-        res4:'',
-        res5:'',
-        res6:'',
-        res7:''
+        res4:'?',
+        res5:'?',
+        res6:'?',
+        res7:'?'
       },
       {
         title: 'The following criteria has been proposed to protect the Carbapenems and Linezolid from overuse',
@@ -48,9 +48,9 @@ worsening inflammatory markers, unresolving fever and new / worsening hemodynami
         `,
         res4:`4.The organism is susceptible to only carbapenems/linezolid,as per culture report
         `,
-        res5:'',
-        res6:'',
-        res7:''
+        res5:'?',
+        res6:'?',
+        res7:'?'
       },
       {
         title: 'Some guiding principles for de-escalation/Escalation:',
@@ -66,10 +66,10 @@ worsening inflammatory markers, unresolving fever and new / worsening hemodynami
         therapy uisng colistin along with beta-lactams (using PK/PD principles)should be discussed with microbiologist
         /physician 
         `,
-        res4:'',
-        res5:'',
-        res6:'',
-        res7:''
+        res4:'?',
+        res5:'?',
+        res6:'?',
+        res7:'?'
       },
       {
         title: 'Indications for Carbapenem use:',
@@ -96,10 +96,10 @@ worsening inflammatory markers, unresolving fever and new / worsening hemodynami
         res1: 'National Treatment Guidelines for Antimicrobial.',
         res2: 'Ministry in infectious Diseases (2016).',
         res3:'Ministry of Health & Family Welfare Government of india.',
-        res4:'',
-        res5:'',
-        res6:'',
-        res7:''
+        res4:'?',
+        res5:'?',
+        res6:'?',
+        res7:'/'
         
       }
 
@@ -110,7 +110,5 @@ worsening inflammatory markers, unresolving fever and new / worsening hemodynami
   ionViewDidLoad() {
     console.log('ionViewDidLoad GuidecontentPage');
   }
-dismiss() {
-    this.viewCtrl.dismiss();
-  }
+
 }

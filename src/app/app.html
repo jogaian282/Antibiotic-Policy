@@ -1,18 +1,23 @@
 <ion-menu [content]="content">
   <ion-header>
-    <img src="assets/images/hosLogo.png" width="40" height="50">
-    <h5 style="margin-top: 0.6rem;
-    margin-bottom: 0rem;">Antibiotic Policy</h5>
+    <h5 style="float:left;">Antibiotic Policy</h5>
+    <ion-buttons end>
+      <img src="assets/images/hosLogo.png" width="40">
+    </ion-buttons>
   </ion-header>
 
-  <ion-content class="custom">
-    <ion-list>
-      <ion-item menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        <!-- <img src="{{p.imgdisplay}}" width="20"/>  -->
-        <ion-icon name="{{p.imgdisplay}}"></ion-icon>
-        <span style="padding-left: 10px;">{{p.title}}</span>
-      </ion-item>
+  <ion-content class="custom" >
+    
+    <ion-list *ngFor="let item of pages" >
+        <ion-list-header>
+          <ion-icon name="{{item.iconName}}" item-start>
+			  {{item.title}}
+		  </ion-icon>
+        </ion-list-header>
+        <ion-item menuClose ion-item (click)="openPage(item)" *ngFor="let subItem of item.pageName;" >{{subItem.name}}</ion-item>
     </ion-list>
+
+
   </ion-content>
 
 </ion-menu>

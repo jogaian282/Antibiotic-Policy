@@ -14,13 +14,25 @@ import {RiskContentPage} from '../risk-content/risk-content';
   templateUrl: 'risk-factors.html',
 })
 export class RiskFactorsPage {
-pet: string = "puppies";
+  riskContent:boolean = false;
+risk=[];
   constructor(public navCtrl: NavController, public navParams: NavParams, public app:App,public modalCtrl: ModalController) {
+this.risk=[
+  {
+title:`Broad spectrum antibiotics within 90 d hospitalization >5 d local high antibiotic resistance rates residence in LTCF chronic
+    dialysis within 30 d home wound care family member with MDR infection mechanical ventilation =5 d immunosuppression structural
+    lung disease IV drug use`
+  },
+  {
+title:`Broad spectrum antibiotics within 90 d hospitalization >5 d local high antibiotic resistance rates residence in LTCF chronic
+    dialysis within 30 d home wound care family member with MDR infection mechanical ventilation =5 d immunosuppression structural
+    lung disease IV dtug use`
   }
-openModal(characterNum) {
-    let modal = this.modalCtrl.create(RiskContentPage, characterNum);
-    modal.present();
+]    
   }
+
+
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad RiskFactorsPage');
   }

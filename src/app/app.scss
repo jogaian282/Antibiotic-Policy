@@ -25,6 +25,15 @@
 .scroll-content{
     overflow-y: auto !important;
 }
+
+.opd
+{
+    cursor:pointer;
+}
+.op1
+{
+    cursor: none;
+}
 .custom
 {
     background-color: #fafafa;
@@ -33,5 +42,4 @@
     background-color: #fafafa;
     font-weight: 700px;
     color: #000;
-    cursor: pointer;
 }
